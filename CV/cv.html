@@ -3,13 +3,38 @@
     <head>
         <title> Danna Ronen CV </title>
         <link rel="stylesheet" href="cv.css">
+             <script type = "text/javascript" src="Functions.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-         <div class="row">
-             <div class="col-1 menu">menu (picture +details)</div>
-             <div class="col-2 right main1">main part of the page</div>
-             <div class="col-2 right main2">main part of the page</div>
+    <body >
+             <div class="col-1 menu">
+                 <img src="MyCVpic.jpeg" class="pic">
+                 <h1> Danna Ronen </h1>
+                 <p class="info" >Facebook:DannaRon</p>
+                 <p class="info" >Linkdin: DannaRo</p>
+                 <p class="info" >Number:0544785968</p>
+                 <a href="Danna Ronen CV.pdf" download= "Danna_Ronen" onclick="this">
+                <button class="ButtonCen">Download</button></a>
+            <a href="Contact.html" target="_blank">
+                 <button class="ButtonCen" onclick="this" >Contact</button>
+                        </a>
+                   <button class="ButtonCen" onclick="SnackFunc()">Click here</button>
+            <button id="snackbar"> Send my CV to other friends </button>
+
+             </div>
+             <div class="col-2 right main1">
+             <h1> Work Exp. </h1>
+                 <p> Work at Pizza hut for 4 years during high school </p>
+                 </br>
+                 <p> Data analyst at Intel Corp. for 2 years </p>
+                 </br>
+                 </div>
+             <div class="col-2 right main2">
+             <h1> Skills </h1>
+                 <p> Exp. with Python, SQL, Java and HTML </p>
+                 </br>
+                 <p> Full control with English and Hebrew </p>
+                 </div>
          </div>
     </body>
 </html>
