@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+.row:after{
+    content : "";
+    clear: both;
+    display: block;
+}
+    [class*="col-"]{
+    float: left;
+    padding: 15px;
+    }
+
+/* For desktop: */
+.col-1 {width: 20%;}
+.col-2 {width: 80%;}
+
+  @media only screen and (max-width: 1000px){
+    /* For mobile phones: */
+    [class*="col-"]{
+     width: 100%;
+    }
+    [class="col-1"]{
+     height: 50px;
+    }
+  }
+
+
+  .menu {
+    background-color: rgb(18, 61, 98);
+    padding: 100px;
+    height: 600px;
+  }
+
+  .main1 {
+    background-color: rgb(200, 200, 200);
+    padding: 100px;
+    height: 300px;
+      text-align: left;
+      margin-top: -4vh;
+  }
+
+    .main2{
+    background-color: rgb(240, 240, 240);
+    padding: 100px;
+    height: 300px;
+  }
+  .pic{
+  margin-left:-11vh;
+  width:30vh;
+  height:29vh;
+  }
+
+  h1 {
+      font-family: Calibri;
+      font-size: 26px;
+      margin-left:-3vh;
+      font-weight: bold;
+      color:white;
+      top:-2vh;
+      color:purple;
+  }
+.info{
+    margin-left:-8vh;
+    display:block;
+    width:10vh;
+    color:white;
+
+}
+
+
+ .ButtonCen{
+     margin-left: -12vh;
+     width: 200px;
+     height: 20px;
+     background-color: purple;
+     color:white;
+ }
+ .container{
+     background-color: lightsteelblue;
+     background-size: cover;
+ }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: purple;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+h2{
+    color:purple;
+margin-left:40%;
+    font-family: Calibri;
+    font-size: 32px;
+    font-weight: bold;
+}
+.Details {
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+.submit{
+    background-color:purple;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+    color:white;
+}
+
+.backgroundPage{
+    background-color:antiquewhite;
+}

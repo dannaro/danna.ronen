@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Danna Ronen CV </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script type = "text/javascript" src ="{{ url_for('static', filename='JS/Functions.js') }}"></script>
+           <link rel="stylesheet" href = "{{ url_for('static', filename='CSS/cv.css') }}">
+    </head>
+    <body >
+             <div class="col-1 menu">
+                 <img src="{{ url_for('static', filename='IMG/MyCVpic.jpeg') }}" alt="Danna PIC" onload="loadImage()" class="center" >
+                 <h1> Danna Ronen </h1>
+                 <p class="info" >Facebook:DannaRon</p>
+                 <p class="info" >Linkdin: DannaRo</p>
+                 <p class="info" >Number:0544785968</p>
+                 <a href="{{ url_for('static', filename='IMG/Danna Ronen CV.pdf') }}" download= "Danna_Ronen" onclick="this">
+                <button class="ButtonCen">Download</button></a>
+            <a href="{{ url_for('Contact.html') }}" target="_blank">
+                 <button class="ButtonCen" onclick="this" >Contact</button>
+                        </a>
+                   <button class="ButtonCen" onclick="SnackFunc()">Click here</button>
+            <button id="snackbar"> Send my CV to other friends </button>
+                <a href="{{ url_for('UserList.html') }}" target="_blank">
+                 <button class="ButtonCen" onclick="this" >Contact List</button>
+                        </a>
+             </div>
+             <div class="col-2 right main1">
+             <h1> Work Exp. </h1>
+                 <p> Work at Pizza hut for 4 years during high school </p>
+                 </br>
+                 <p> Data analyst at Intel Corp. for 2 years </p>
+                 </br>
+                 </div>
+             <div class="col-2 right main2">
+             <h1> Skills </h1>
+                 <p> Exp. with Python, SQL, Java and HTML </p>
+                 </br>
+                 <p> Full control with English and Hebrew </p>
+                 </div>
+         </div>
+    </body>
+</html>
